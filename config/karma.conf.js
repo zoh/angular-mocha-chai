@@ -1,20 +1,21 @@
 basePath = '../';
 
 files = [
-  JASMINE,
-  JASMINE_ADAPTER,
+  MOCHA,
+  MOCHA_ADAPTER,
   'app/lib/angular/angular.js',
   'app/lib/angular/angular-*.js',
-  'test/lib/angular/angular-mocks.js',
+  'test/lib/angular/angular-mocks-mocha.js',
+  'test/lib/chai.js',
   'app/js/**/*.js',
   'test/unit/**/*.js'
 ];
 
 autoWatch = true;
 
-browsers = ['Chrome'];
+browsers = ['PhantomJS'];
 
 junitReporter = {
-  outputFile: 'test_out/unit.xml',
-  suite: 'unit'
+    outputFile: 'test_out/unit.xml',
+    suite: 'unit'
 };
