@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html>
 <head>
     <title></title>
@@ -7,12 +8,28 @@
 </head>
 <body>
 
+<!--
 <div ng-app="myApp">
     <div ng-controller="FirstCtrl">
         <input type="text" ng-model="data.message"/>
         <h1>{{data.message}}</h1>
         <p>{{data.message | reverse}}</p>
     </div>
+
+    <div ng-controller="AvengersCtrl">
+        <input type="text" ng-model="search.$"/>
+        <table>
+            <tr ng-repeat="actor in avengers.cast | limitTo:2">
+                <td>{{actor.name | lowercase}}</td>
+                <td>{{actor.character}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+-->
+
+<div ng-app="behaviorApp">
+    <div leave enter='panel'>I'am content!</div>
 </div>
 
 </body>
